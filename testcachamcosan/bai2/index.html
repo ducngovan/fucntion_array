@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien thi mang</title>
+</head>
+<body>
+<script>
+    // Write a JavaScript program which accept a number as input and insert dashes
+    // (-) between each two even numbers. For example if you
+    //     accept 025468 the output should be 0-254-6-
+    var array = [2,3,4,5,6,8,6,5,4,3,2];
+    var result = [array[0]];
+    var i;
+    for(i=1; i<array.length;i++){
+        if(array[i-1] &&array[i]%2==0){
+            result.push('-',array[i]);
+        }else{
+            result.push(array[i]);
+        }
+
+    }document.write(result);
+</script>
+</body>
+</html>
